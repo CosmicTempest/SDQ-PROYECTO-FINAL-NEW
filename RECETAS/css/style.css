@@ -41,6 +41,9 @@ body{
     margin: 10px;
 
 }
+#form div{
+    margin:5px;
+}
 #pleaseSearch{
     display:inherit;
     justify-content: space-between;
