@@ -1,0 +1,224 @@
+body{
+    background-image: 
+    url('https://wallpapers.com/images/hd/food-4k-1vrcb0mw76zcg4qf.jpg');
+}
+#container-error{
+    display:flex;
+    align-self: center;
+    justify-self:center;
+}
+.container{
+    position:absolute;
+    display:block;
+    border-radius: 5px;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    transform: translate(5%, 0%);
+    background-color:rgb(255, 253, 208);
+    color:azure;
+    z-index:0;
+    padding: 5px;
+   
+}
+
+#viewContent{
+    background-color: rgb(255, 253, 208);
+    padding:5px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+
+}
+#form{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    background-color: rgb(218, 247, 166);
+    padding: 10px;
+    margin: 10px;
+
+}
+#pleaseSearch{
+    display:inherit;
+    justify-content: space-between;
+    width:100%;
+}
+#submitSearch{
+background-color: inherit;
+}
+#form label{
+    width:100vh;
+}
+.prevnext button{
+    background-color:rgb(255, 87, 51 );
+    color:white;
+    border-color:white;
+    height:100%;
+    
+}
+.opener-content{
+    display:none;
+}
+.opener:hover{
+    .opener span{display:flex};
+}
+.form-control{
+    padding: 5px;
+    margin: 5px;
+}
+.content-card{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    padding:3px;
+    background-color: rgb(218, 247, 166);
+    color:black;
+
+}
+#goToRecipe{
+    display:flex;
+    flex-wrap:wrap;
+    text-decoration: none;
+    height:min-content;
+    color: white;
+    padding:5px;
+}
+
+#content-card-top{
+    display:flex;
+    align-self: center;
+    border-radius: 5px;
+    color:black;
+    background-color: white;
+    margin-bottom: 15px;
+    height:min-content;
+    width:min-content;
+    border: solid 1px;
+    border-color: rgb(255, 87, 51 );
+}
+.content-card-head{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(255, 87, 51)
+    
+}
+.content-card-head img{
+    display:inherit;
+    width:50%;
+    height:auto;
+    border: solid 1px;
+    margin:10px;
+
+    
+    
+
+}
+.content-card-head h1{
+    display:inherit;
+    word-wrap: break-word;
+    word-break: break-word;
+    border-radius: 5px;
+    border-width: 3px;
+    height:min-content;
+    border: solid 1px;
+    padding: 5px;
+
+    
+}
+
+.content-card p {
+    display: block;
+    padding: 5px;
+    background-color: white;
+}
+.content-card p > b {
+    margin:0 3px;
+
+    
+}
+.content-card div{
+    border-radius: 5px;
+    
+    margin-bottom: 10px;
+    border: solid 1px;
+    border-color: rgb(255, 87, 51 );
+}
+
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    
+}
+
+.animateArrowRight {
+    animation: arrowRight 1s;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+/* .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+} */
+.animateArrowDown{
+    animation: arrowDown 1s;
+    -webkit-animation: arrowDown 1s;
+}
+@keyframes arrowDown {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(90deg)}
+}
+
+.link{
+    background:none;
+    border:none;
+    text-decoration:none;
+    color: #777;
+    font-family: inherit;
+    font-size:inherit;
+    cursor:pointer;
+    padding:0;
+}
+.dropdown.active > .link, .link:hover{
+    color:black;
+}
+.dropdown{
+    position:relative;
+}
+.dropdown-menu{
+    position:absolute;
+    left:0;
+    top:calc(100%, .25rem);
+    padding:.75rem;
+    background-color: white;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity:0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+
+}
+.dropdown.active > .link + .dropdown-menu {
+    opacity:1;
+    transform: translateY(0);
+    pointer-events:auto;
+}
+
+.information-grid{
+    display:grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+}
+.dropdown-links{
+    display:flex;
+    flex-direction: column;
+    gap: .25rem;
+}

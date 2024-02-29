@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Cocina</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="form">
+            <div id="pleaseSearch">
+                <input type="text" class="form-control" id="searchQuery" placeholder="Search Recipes...">
+                <!-- <div class="dropdown" data-dropdown id="CuisineDropDown">
+                    <button class="form-control, link" data-dropdown-button>Cuisine<i class="arrow"></i></button>
+                    <div class="dropdown-menu information-grid">
+                        <div class="dropdown-heading">
+                        <div class="dropdown-links">
+                            <input type="checkbox" class="link">
+                            <input type="checkbox" class="link">
+                            <input type="checkbox" class="link">
+                        </div>
+                    </div>
+                
+                
+                </div>
+            </div> -->
+            <div class="prevnext">
+                <button onclick="prevBtn()" id="prev">Prev</button>
+                <button onclick="nextBtn()" id="next">Next</button>
+            </div>
+            
+            <button type="submit" class="form-control" id="submitSearch" onclick="fetchRecipes()">Search</button>
+            
+            <!-- <div id="checker" class="opener">
+                <span id="span" class="opener-content">
+                    <input type="checkbox" name="pleaseSelect" id="" class="form-control" >
+                    <input type="checkbox" name="pleaseSelect" id="" class="form-control">
+                    <input type="checkbox" name="pleaseSelect" id="" class="form-control">
+                    
+                </span>
+                <span id="span" class="opener-content">
+                    <input type="checkbox" name="pleaseSelect" id="" class="form-control" >
+                    <input type="checkbox" name="pleaseSelect" id="" class="form-control">
+                    <input type="checkbox" name="pleaseSelect" id="" class="form-control">
+                    
+                </span>
+                <span id="span" class="opener-content">
+                    <input type="checkbox" name="pleaseSelect" id="" class="form-control" >
+                    <input type="checkbox" name="pleaseSelect" id="" class="form-control">
+                    <input type="checkbox" name="pleaseSelect" id="" class="form-control">
+                    
+                </span>
+               
+                
+            </div> -->
+            
+        </div>
+        
+        <div id="viewContent">
+            <div id="content-card-top"><h1>Recipes</h1></div>
+            <!-- <div class="content-card">
+                    <div class="content-card-head">
+                        <img src="#"><h3>Recipe Title</h3>
+                    </div>
+                    <p>Recipe Description</p><p></p> -->
+            
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
