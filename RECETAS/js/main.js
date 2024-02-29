@@ -21,21 +21,6 @@ document.addEventListener("DOMContentLoaded", function(offset){
         previousButton.style.visibility = 'auto'
     }
     })
-// document.addEventListener('click', e => {
-//     const isDropdownButton = e.target.matches("[data-dropdown-button]")
-//     if(!isDropdownButton && e.target.closest('[data-dropdown]') !=null) return
-
-//     let currentDropdown 
-//     if(isDropdownButton) {
-//         currentDropdown = e.target.closest('[data-dropdown]')
-//         currentDropdown.classList.toggle('active')
-    
-//     }
-//     document.querySelectorAll("[data-dropdown].active").forEach(dropdown =>{
-//         if(dropdown === currentDropdown) return 
-//         dropdown.classList.remove('active')})
-// })
-// let creator = document.querySelector('#form').childNodes[]
 
 const fetchRecipes = async () => {
     try{
@@ -109,59 +94,6 @@ fetchRecipes().then((msg) =>{
     console.log(err);
 })
 
-// searchBtn.addEventListener('submit', fetchRecipes())
-
-// const fetchAPI = async () => {
-//     try{const res = await fetch(`${baseUrl}/recipes/complexSearch${apiKey}${offsetString}${limitString}${query}`)
-//         if(!res.ok | searchQuery == ''){
-//             throw new Error(handleError)
-//         }
-//        const data = await res.json()
-//        console.log(data)
-//     contentCardSelector.innerHTML = '';
-//     const recipeList = data.recipes;
-//     recipeList.forEach( async (recipes) =>{
-//         const contentCard = document.createElement('div');
-//         contentCard.classList.add('content-card')
-//         contentCard.innerHTML = `
-//         <div class="content-card-head">
-//         <img src="${recipes.image}"><h1>${recipes.title}</h1></div>
-//         <a id="goToRecipe" href="${recipes.spoonacularSourceUrl}" target="_blank">Go to Recipe</a>
-//         <p>${recipes.summary}</p>`
-//     viewContent.appendChild(contentCard);
-//     });
-// }
-     
-//     catch(err){
-//             console.log(err)
-//             contentCardSelector.innerHTML=`<div id=#container-error>${handleError}</div>`;
-//             throw new Error(handleError)
-//         }
-// }
-    
-
-//    fetchAPI().then((msg) => {
-//     console.log(msg);
-//    }).catch((err) =>{
-//        console.log(err);
-
-//    }) 
-    
-// searchBtn.addEventListener('click', fetchAPI())
-
-
-// const prevBtn = () =>{
-// if(offset != 0){
-//     offset--
-// }
-
-// }
-// const nextBtn = () =>{
-//     if(offset != 900){
-//         offset++
-//     }
-
-// }
 const prevBtn = () => {
   
         offset--;
